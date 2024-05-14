@@ -14,11 +14,45 @@
 }
 
 .cstm-btn {
-  @apply bg-main-2 py-4 px-7 rounded-lg text-main-0 text-sm font-bold;
+  @apply bg-main-2 py-4 px-7 rounded-xl text-main-0 text-sm font-bold;
 }
 .cstm-p {
   @apply text-main-3 text-base;
 }
 .cstm-h {
   @apply text-main-4 text-3xl font-extrabold;
+}
+
+.cstm-h1 {
+  @apply text-main-4 text-3xl font-extrabold text-center;
+}
+
+.cstm-h2 {
+  @apply text-main-4 text-2xl font-extrabold;
+}
+.cstm-box-shadow {
+  border-radius: 16px;
+  background: #fff;
+
+  /* Main shadow */
+  box-shadow: 0px 32px 64px -12px rgba(85, 105, 135, 0.13);
+}
+
+.cstm-col {
+  @apply flex flex-col items-center justify-center py-6 px-6;
+}
+
+.cstm-icon-2 {
+  @apply bg-main-2 min-w-16 h-16 rounded-3xl flex justify-center items-center rounded-3xl;
+}
+
+.section {
+  @apply w-full flex items-center justify-center;
+}
+
+.cstm-background-img {
+  background-image: url("img/Thunder1.png");
+  background-size: cover; /* Untuk memastikan gambar mengisi seluruh latar belakang */
+  background-position: center; /* Untuk mengatur posisi gambar di tengah */
+  background-repeat: no-repeat; /* Untuk menghindari pengulangan gambar */
 }
