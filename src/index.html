@@ -4,8 +4,210 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link href="./output.css" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap"
+      rel="stylesheet"
+    />
+    <style></style>
   </head>
-  <body>
-    <img src="1.jpg" alt="" />
+  <body class=".plus-jakarta-sans-400">
+    <!-- navbar -->
+    <header class="w-full flex items-center justify-center fixed bg-main-0">
+      <nav
+        class="container py-6 w-11/12 h-14 flex items-center justify-between"
+      >
+        <div id="logo" class="flex items-center justify-start gap-2">
+          <img src="img/logo1.svg" alt="" />
+          <img src="img/logo2.svg" alt="" />
+        </div>
+
+        <div id="link" class="">
+          <ul class="flex items-center justify-center gap-12">
+            <li><a href="">Product</a></li>
+            <li><a href="">Features</a></li>
+            <li><a href="">Pricing</a></li>
+            <li><a href="">Company</a></li>
+          </ul>
+        </div>
+
+        <div id="authk" class="flex gap-5">
+          <a href="" id="login" class="py-2 px-4"> Log In </a>
+          <a
+            href=""
+            id="signup"
+            class="py-2 px-4 text-main-2 bg-main-1 rounded bg-fuchsia-200"
+            >Sign Up
+          </a>
+        </div>
+      </nav>
+    </header>
+
+    <!-- main -->
+    <main class="w-full">
+      <!-- hero section -->
+      <section class="w-full flex items-center justify-center">
+        <div
+          class="container w-11/12 flex items-center justify-between h-screen"
+        >
+          <div id="texts" class="w-1/2 flex flex-col gap-6">
+            <div id="text-1" class="flex flex-col gap-1">
+              <div class="flex gap-2 text-main-2 font-medium text-sm">
+                <svg
+                  width="20"
+                  height="20"
+                  viewBox="0 0 20 20"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <g clip-path="url(#clip0_4630_132)">
+                    <path
+                      d="M4.9231 13.3187H15.033V17.7143H4.9231V13.3187Z"
+                      fill="#4318FF"
+                    />
+                    <path
+                      d="M15.3846 14.2418C15.3846 12.7962 14.815 11.4098 13.801 10.3877C12.7871 9.36546 11.4119 8.79121 9.978 8.79121C8.54407 8.79121 7.16891 9.36546 6.15497 10.3877C5.14104 11.4098 4.57141 12.7962 4.57141 14.2418H15.3846Z"
+                      fill="#4318FF"
+                    />
+                    <path
+                      fill-rule="evenodd"
+                      clip-rule="evenodd"
+                      d="M10 15.6044C13.0952 15.6044 15.6044 13.0952 15.6044 10C15.6044 6.90479 13.0952 4.3956 10 4.3956C6.90479 4.3956 4.3956 6.90479 4.3956 10C4.3956 13.0952 6.90479 15.6044 10 15.6044ZM10 20C15.5229 20 20 15.5229 20 10C20 4.47714 15.5229 0 10 0C4.47714 0 0 4.47714 0 10C0 15.5229 4.47714 20 10 20Z"
+                      fill="#4318FF"
+                    />
+                  </g>
+                  <defs>
+                    <clipPath id="clip0_4630_132">
+                      <rect width="20" height="20" fill="white" />
+                    </clipPath>
+                  </defs>
+                </svg>
+                <p>TRENDIEST TAILWIND TEMPLATES</p>
+              </div>
+
+              <h1 class="font-bold text-6xl flex justify-start text-main-4">
+                Take your website to the next level with Horizon UI
+              </h1>
+            </div>
+            <div id="text-3" class="text-base flex justify-start text-main-3">
+              <p>
+                Save hundreds of hours trying to create and develop a dashboard
+                from scratch. The fastest, most responsive & trendiest dashboard
+                is here. Seriously.
+              </p>
+            </div>
+
+            <div id="btn" class="flex items-center justify-start gap-2">
+              <a href="" class="cstm-btn">Get started now</a>
+              <a
+                class="text-sm font-medium flex gap-1 text-main-4 flex items-center"
+              >
+                <img src="img/phone.svg" alt="" />
+                Book a free call
+              </a>
+            </div>
+          </div>
+          <div id="gambar" class="w-1/2 flex justify-end">
+            <img src="img/1.svg" alt="img/1.svg" class="w-8/12" />
+          </div>
+        </div>
+      </section>
+      <!--  hero section -->
+
+      <!-- section  -->
+      <section class="w-full flex items-center justify-center py-28">
+        <div
+          class="container w-11/12 flex flex-col items-center justify-center gap-16"
+        >
+          <div
+            id="detail"
+            class="flex flex-col items-center justify-center gap-2"
+          >
+            <h1 class="cstm-h">How Horizon works?</h1>
+            <p class="cstm-p">
+              Tellus rutrum tellus pellentesque eu tincidunt tortor condimentum.
+            </p>
+          </div>
+
+          <div id="steps " class="flex gap-11 items-center">
+            <div id="col" class="flex gap-2">
+              <div
+                class="min-w-12 h-12 rounded-full bg-main-2 text-main-0 flex items-center justify-center"
+              >
+                <p>1</p>
+              </div>
+              <div class="text">
+                <p class="text-base font-bold">Create your Account</p>
+                <p>Condimentum vit pellemsque habitant morbi at molestie.</p>
+              </div>
+            </div>
+            <div>
+              <img src="img/right.svg" alt="" />
+            </div>
+
+            <div id="col" class="flex gap-2">
+              <div
+                class="min-w-12 h-12 rounded-full text-main-0 flex items-center justify-center border-2 border-main-2 text-main-2"
+              >
+                <p>2</p>
+              </div>
+              <div class="text">
+                <p class="text-base font-bold">Create your Account</p>
+                <p>Condimentum vit pellemsque habitant morbi at molestie.</p>
+              </div>
+            </div>
+            <div>
+              <img src="img/right.svg" alt="" />
+            </div>
+
+            <div id="col" class="flex gap-2">
+              <div
+                class="min-w-12 h-12 rounded-full text-main-0 flex items-center justify-center border-2 border-main-2 text-main-2"
+              >
+                <p>3</p>
+              </div>
+              <div class="text">
+                <p class="text-base font-bold">Create your Account</p>
+                <p>Condimentum vit pellemsque habitant morbi at molestie.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- section  -->
+
+      <!-- section  -->
+      <section class="w-full flex items-center justify-center py-28">
+        <div
+          class="container w-11/12 flex flex-col items-center justify-center gap-16"
+        >
+          <div class="col">
+            <div class="img bg-main-2">
+              <svg
+                width="25"
+                height="24"
+                viewBox="0 0 25 24"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M22.3233 8C22.3233 7.28 21.9533 6.65 21.3833 6.3L12.3333 1L3.28331 6.3C2.71331 6.65 2.33331 7.28 2.33331 8V18C2.33331 19.1 3.23331 20 4.33331 20H20.3333C21.4333 20 22.3333 19.1 22.3333 18L22.3233 8ZM20.3233 8V8.01L12.3333 13L4.33331 8L12.3333 3.32L20.3233 8ZM4.33331 18V10.34L12.3333 15.36L20.3233 10.37L20.3333 18H4.33331Z"
+                  fill="white"
+                />
+              </svg>
+            </div>
+            <div class="text">
+              <h1>Share team inboxes</h1>
+              <p>
+                Whether you have a team of 2 or 200, our shared team inboxes
+                keep everyone
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- section  -->
+    </main>
   </body>
 </html>

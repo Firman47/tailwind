@@ -1,3 +1,24 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+/* 
+// <uniquifier>: Use a unique and descriptive class name
+// <weight>: Use a value from 200 to 800 */
+
+.plus-jakarta-sans-400 {
+  font-family: "Plus Jakarta Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.cstm-btn {
+  @apply bg-main-2 py-4 px-7 rounded-lg text-main-0 text-sm font-bold;
+}
+.cstm-p {
+  @apply text-main-3 text-base;
+}
+.cstm-h {
+  @apply text-main-4 text-3xl font-extrabold;
+}
