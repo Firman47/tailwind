@@ -2,6 +2,9 @@
 module.exports = {
   content: ["./src/**/*.{html,js}"],
   theme: {
+    fontFamily: {
+      sans: ["PlusJakartaSans", "sans-serif"],
+    },
     colors: {
       main: {
         0: "white",

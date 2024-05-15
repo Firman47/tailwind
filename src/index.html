@@ -4,17 +4,19 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link href="./output.css" rel="stylesheet" />
+
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap"
       rel="stylesheet"
     />
+
     <style></style>
   </head>
   <body class=".plus-jakarta-sans-400">
     <!-- navbar -->
-    <header class="section fixed bg-main-0">
+    <header class="section fixed bg-main-0 cstm-box-shadow">
       <nav
         class="container py-6 w-11/12 h-14 flex items-center justify-between"
       >
@@ -33,11 +35,17 @@
         </div>
 
         <div id="authk" class="flex gap-5">
-          <a href="" id="login" class="py-2 px-4"> Log In </a>
+          <a
+            href=""
+            id="login"
+            class="py-2 px-4 cstm-btn-hover font-medium rounded-lg border-2 border-main-0"
+          >
+            Log In
+          </a>
           <a
             href=""
             id="signup"
-            class="py-2 px-4 text-main-2 bg-main-1 rounded-lg bg-fuchsia-200 font-medium"
+            class="py-2 px-4 text-main-2 bg-main-1 rounded-lg font-medium hover:opacity-70 border-2 border-main-1"
             >Sign Up
           </a>
         </div>
@@ -99,9 +107,13 @@
             </div>
 
             <div id="btn" class="flex items-center justify-start gap-2">
-              <a href="" class="cstm-btn">Get started now</a>
               <a
-                class="text-sm font-medium flex gap-1 text-main-4 flex items-center"
+                href=""
+                class="cstm-btn hover:opacity-80 border-2 border-main-2"
+                >Get started now</a
+              >
+              <a
+                class="py-4 px-7 text-sm font-medium rounded-xl border-2 border-main-0 flex gap-1 text-main-4 items-center"
               >
                 <img src="img/phone.svg" alt="" />
                 Book a free call
@@ -148,7 +160,7 @@
 
             <div id="col" class="flex gap-2">
               <div
-                class="min-w-12 h-12 rounded-full text-main-0 flex items-center justify-center border-2 border-main-2 text-main-2"
+                class="min-w-12 h-12 rounded-full text-main-0 flex items-center justify-center border-2 border-main-2"
               >
                 <p>2</p>
               </div>
@@ -381,10 +393,14 @@
           </h1>
 
           <div id="btn" class="flex items-center justify-end w-1/2 gap-4">
-            <a href="" class="border-2 border-main-2 text-main-2 p-3 rounded-xl"
+            <a
+              href=""
+              class="border-2 border-main-2 text-main-2 p-3 rounded-xl hover:bg-main-2 hover:text-main-0"
               >Try Demo</a
             >
-            <a href="" class="bg-main-2 text-main-0 p-3 rounded-xl"
+            <a
+              href=""
+              class="bg-main-2 text-main-0 p-3 rounded-xl hover:opacity-80 border-2 border-main-2"
               >Get Started Now</a
             >
           </div>

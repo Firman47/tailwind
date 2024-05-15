@@ -5,54 +5,69 @@
 /* 
 // <uniquifier>: Use a unique and descriptive class name
 // <weight>: Use a value from 200 to 800 */
-
-.plus-jakarta-sans-400 {
-  font-family: "Plus Jakarta Sans", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: 400;
-  font-style: normal;
+@layer base {
+  html {
+    font-family: "Plus Jakarta Sans", system-ui, sans-serif;
+    font-optical-sizing: auto;
+    font-weight: <weight>;
+    font-style: normal;
+    font-variation-settings: "slnt" 0;
+  }
 }
 
-.cstm-btn {
-  @apply bg-main-2 py-4 px-7 rounded-xl text-main-0 text-sm font-bold;
-}
-.cstm-p {
-  @apply text-main-3 text-base;
-}
-.cstm-h {
-  @apply text-main-4 text-3xl font-extrabold;
-}
+@layer components {
+  .cstm-btn {
+    @apply bg-main-2 py-4 px-7 rounded-xl text-main-0 text-sm font-bold;
+  }
+  .cstm-p {
+    @apply text-main-3 text-base;
+  }
+  .cstm-h {
+    @apply text-main-4 text-3xl font-extrabold;
+  }
 
-.cstm-h1 {
-  @apply text-main-4 text-3xl font-extrabold text-center;
-}
+  .cstm-h1 {
+    @apply text-main-4 text-3xl font-extrabold text-center;
+  }
 
-.cstm-h2 {
-  @apply text-main-4 text-2xl font-extrabold;
-}
-.cstm-box-shadow {
-  border-radius: 16px;
-  background: #fff;
+  .cstm-h2 {
+    @apply text-main-4 text-2xl font-extrabold;
+  }
+  .cstm-box-shadow {
+    border-radius: 16px;
+    background: #fff;
 
-  /* Main shadow */
-  box-shadow: 0px 32px 64px -12px rgba(85, 105, 135, 0.13);
-}
+    /* Main shadow */
+    box-shadow: 0px 32px 64px -12px rgba(85, 105, 135, 0.13);
+  }
 
-.cstm-col {
-  @apply flex flex-col items-center justify-center py-6 px-6;
-}
+  .cstm-col {
+    @apply flex flex-col items-center justify-center py-6 px-6;
+  }
 
-.cstm-icon-2 {
-  @apply bg-main-2 min-w-16 h-16 rounded-3xl flex justify-center items-center rounded-3xl;
-}
+  .cstm-icon-2 {
+    @apply bg-main-2 min-w-16 h-16 rounded-3xl flex justify-center items-center rounded-3xl;
+  }
 
-.section {
-  @apply w-full flex items-center justify-center;
-}
+  .section {
+    @apply w-full flex items-center justify-center;
+  }
 
-.cstm-background-img {
-  background-image: url("img/Thunder1.png");
-  background-size: cover; /* Untuk memastikan gambar mengisi seluruh latar belakang */
-  background-position: center; /* Untuk mengatur posisi gambar di tengah */
-  background-repeat: no-repeat; /* Untuk menghindari pengulangan gambar */
+  .cstm-background-img {
+    background-image: url("img/Thunder1.png");
+    background-size: cover; /* Untuk memastikan gambar mengisi seluruh latar belakang */
+    background-position: center; /* Untuk mengatur posisi gambar di tengah */
+    background-repeat: no-repeat; /* Untuk menghindari pengulangan gambar */
+  }
+
+  /* btn */
+
+  .cstm-btn {
+    @apply bg-main-2 py-4 px-7 rounded-xl text-main-0 text-sm font-bold;
+  }
+  .cstm-btn-hover {
+    @apply hover:border-2 hover:border-main-2 hover:text-main-2;
+  }
+
+  /*  btn */
 }
