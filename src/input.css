@@ -46,7 +46,7 @@
   }
 
   .cstm-icon-2 {
-    @apply bg-main-2 min-w-16 h-16 rounded-3xl flex justify-center items-center rounded-3xl;
+    @apply bg-main-2 min-w-16 h-16  flex justify-center items-center rounded-3xl;
   }
 
   .section {
