@@ -503,50 +503,46 @@
               </div>
 
               <div class="input w-full flex justify-between gap-2">
-                <label for="" class="w-1/6 text-main-4 font-semibold"
+                <label for="" class="w-1/4 text-main-4 font-semibold"
                   >Name</label
                 >
-                <label for="" class="w-1/6 text-main-4 font-semibold">:</label>
                 <input
                   type="text"
                   placeholder="Name"
-                  class="w-11/12 border-2 border-main-4 py-1 px-2 rounded-xl focus:outline-none"
+                  class="w-3/4 border-2 border-main-4 py-1 px-2 rounded-xl focus:outline-none"
                 />
               </div>
 
               <div class="input w-full flex justify-between gap-2">
-                <label for="" class="w-1/6 text-main-4 font-semibold"
+                <label for="" class="w-1/4 text-main-4 font-semibold"
                   >Email</label
                 >
-                <label for="" class="w-1/6 text-main-4 font-semibold">:</label>
                 <input
                   type="text"
                   placeholder="Email"
-                  class="w-11/12 border-2 border-main-4 -2 py-1 px-2 rounded-xl focus:outline-none"
+                  class="w-3/4 border-2 border-main-4 -2 py-1 px-2 rounded-xl focus:outline-none"
                 />
               </div>
 
               <div class="input w-full flex justify-between gap-2">
-                <label for="" class="w-1/6 text-main-4 font-semibold"
+                <label for="" class="w-1/4 text-main-4 font-semibold"
                   >Phone</label
                 >
-                <label for="" class="w-1/6 text-main-4 font-semibold">:</label>
                 <input
                   type="text"
                   placeholder="phone"
-                  class="w-11/12 border-2 border-main-4 py-1 px-2 rounded-xl focus:outline-none"
+                  class="w-3/4 border-2 border-main-4 py-1 px-2 rounded-xl focus:outline-none"
                 />
               </div>
 
               <div class="input w-full flex justify-between gap-2">
-                <label for="" class="w-1/6 text-main-4 font-semibold"
+                <label for="" class="w-1/4 text-main-4 font-semibold"
                   >Message</label
                 >
-                <label for="" class="w-1/6 text-main-4 font-semibold">:</label>
                 <textarea
                   type="text"
                   placeholder="Message"
-                  class="w-11/12 border-2 border-main-4 py-1 px-2 rounded-xl focus:outline-none"
+                  class="w-3/4 border-2 border-main-4 py-1 px-2 rounded-xl focus:outline-none"
                 ></textarea>
               </div>
 
@@ -561,9 +557,15 @@
           </div>
         </div>
       </section>
+      <section class="w-full">
+        <div class="w-full p-32 flex justify-center">
+          <div id="chart" class="w-96 flex justify-center"></div>
+          <div id="b-chart" class="w-96 flex justify-center"></div>
+        </div>
+      </section>
     </main>
 
-    <footer class="w-full flex items-cen ter justify-center">
+    <footer class="w-full flex items-center justify-center">
       <div
         class="container flex flex-col items-center justify-center py-20 px-4 gap-4 sm:gap-8"
       >
@@ -729,6 +731,121 @@
       togle.addEventListener("click", function () {
         link.classList.toggle("hidden");
       });
+    </script>
+
+    <script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
+
+    <script>
+      var options = {
+        chart: {
+          type: "bar",
+        },
+        series: [
+          {
+            name: "sales mobil",
+            data: [30, 40, 45, 50, 49, 60, 70, 91, 125],
+          },
+        ],
+        xaxis: {
+          categories: [1991, 1992, 1993, 1994, 1995, 1996, 1997, 1998, 1999],
+        },
+      };
+
+      var chart = new ApexCharts(document.querySelector("#chart"), options);
+
+      chart.render();
+
+      var options = {
+        series: [
+          {
+            name: "series1",
+            data: [31, 40, 28, 51, 42, 109, 100],
+          },
+          {
+            name: "series2",
+            data: [11, 32, 45, 32, 34, 52, 41],
+          },
+        ],
+        chart: {
+          height: 350,
+          type: "area",
+        },
+        dataLabels: {
+          enabled: false,
+        },
+        stroke: {
+          curve: "smooth",
+        },
+        xaxis: {
+          type: "datetime",
+          categories: [
+            "2018-09-19T00:00:00.000Z",
+            "2018-09-19T01:30:00.000Z",
+            "2018-09-19T02:30:00.000Z",
+            "2018-09-19T03:30:00.000Z",
+            "2018-09-19T04:30:00.000Z",
+            "2018-09-19T05:30:00.000Z",
+            "2018-09-19T06:30:00.000Z",
+          ],
+        },
+        tooltip: {
+          x: {
+            format: "dd/MM/yy HH:mm",
+          },
+        },
+      };
+
+      var chart = new ApexCharts(document.querySelector("#b-chart"), options);
+      chart.render();
+    </script>
+
+    <script>
+      const options2 = {
+        series: [
+          {
+            name: "STOCK ABC",
+            data: series.monthDataSeries1.prices,
+          },
+        ],
+        chart: {
+          type: "area",
+          height: 350,
+          zoom: {
+            enabled: false,
+          },
+        },
+        dataLabels: {
+          enabled: false,
+        },
+        stroke: {
+          curve: "straight",
+        },
+
+        title: {
+          text: "Fundamental Analysis of Stocks",
+          align: "left",
+        },
+        subtitle: {
+          text: "Price Movements",
+          align: "left",
+        },
+        labels: series.monthDataSeries1.dates,
+        xaxis: {
+          type: "datetime",
+        },
+        yaxis: {
+          opposite: true,
+        },
+        legend: {
+          horizontalAlign: "left",
+        },
+      };
+
+      const chart2 = new ApexCharts(
+        document.getElementById("chart2"),
+        options2
+      );
+      chart2.render();
     </script>
   </body>
 </html>
