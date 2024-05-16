@@ -26,11 +26,12 @@
         </div>
 
         <div id="link" class="">
-          <ul class="flex items-center justify-center gap-12">
+          <ul class="flex items-center justify-center gap-10">
             <li><a href="">Product</a></li>
             <li><a href="">Features</a></li>
             <li><a href="">Pricing</a></li>
             <li><a href="">Company</a></li>
+            <a href="#contact">Contact</a>
           </ul>
         </div>
 
@@ -91,6 +92,7 @@
           <a href="">Features</a>
           <a href="">Pricing</a>
           <a href="">Company</a>
+          <a href="#contact">Contact</a>
         </div>
       </nav>
     </header>
@@ -262,7 +264,7 @@
           id="container"
           class="flex flex-col sm:flex-row items-center justify-center gap-16"
         >
-          <div class="cstm-col">
+          <div class="cstm-col px-6">
             <div class="img cstm-icon-2">
               <svg
                 width="25"
@@ -283,7 +285,7 @@
               everyone
             </p>
           </div>
-          <div class="cstm-col cstm-box-shadow">
+          <div class="cstm-col px-6 cstm-box-shadow">
             <div class="img cstm-icon-2">
               <svg
                 width="24"
@@ -304,7 +306,7 @@
               everyone
             </p>
           </div>
-          <div class="cstm-col">
+          <div class="cstm-col px-6">
             <div class="img cstm-icon-2">
               <svg
                 width="25"
@@ -484,14 +486,14 @@
       <!-- section 5 -->
 
       <!--  section form-->
-      <section class="py-16 px-5 sm:px-[150px]">
+      <section id="contact" class="py-16 px-5 sm:px-[150px]">
         <div
           class="flex flex-col sm:flex-row items-center justify-center gap-14 sm:gap-16"
         >
           <div id="form-contact" class="w-full sm:w-1/2">
             <form
               action=""
-              class="w-full h-full flex flex-col items-center justify-centerr gap-2 shadow-xl p-5 rounded-xl"
+              class="w-full h-full flex flex-col items-center justify-centerr gap-2 shadow-2xl p-5 rounded-xl"
             >
               <div id="header-contact" class="text-center flex flex-col mb-3">
                 <h1 class="cstm-h">Contact</h1>
@@ -499,39 +501,52 @@
                   Lorem ipsum dolor sit amet consectetur adipisicing elit.
                 </p>
               </div>
+
               <div class="input w-full flex justify-between gap-2">
-                <label for="" class="w-1/4">Name</label>
+                <label for="" class="w-1/6 text-main-4 font-semibold"
+                  >Name</label
+                >
+                <label for="" class="w-1/6 text-main-4 font-semibold">:</label>
                 <input
                   type="text"
                   placeholder="Name"
-                  class="w-3/4 border-2 py-1 px-2 rounded-xl"
+                  class="w-11/12 border-2 border-main-4 py-1 px-2 rounded-xl focus:outline-none"
                 />
               </div>
 
               <div class="input w-full flex justify-between gap-2">
-                <label for="" class="w-1/4">Email</label>
+                <label for="" class="w-1/6 text-main-4 font-semibold"
+                  >Email</label
+                >
+                <label for="" class="w-1/6 text-main-4 font-semibold">:</label>
                 <input
                   type="text"
                   placeholder="Email"
-                  class="w-3/4 border-2 py-1 px-2 rounded-xl"
+                  class="w-11/12 border-2 border-main-4 -2 py-1 px-2 rounded-xl focus:outline-none"
                 />
               </div>
 
               <div class="input w-full flex justify-between gap-2">
-                <label for="" class="w-1/4">Phone</label>
+                <label for="" class="w-1/6 text-main-4 font-semibold"
+                  >Phone</label
+                >
+                <label for="" class="w-1/6 text-main-4 font-semibold">:</label>
                 <input
                   type="text"
                   placeholder="phone"
-                  class="w-3/4 border-2 py-1 px-2 rounded-xl"
+                  class="w-11/12 border-2 border-main-4 py-1 px-2 rounded-xl focus:outline-none"
                 />
               </div>
 
               <div class="input w-full flex justify-between gap-2">
-                <label for="" class="w-1/4">Message</label>
+                <label for="" class="w-1/6 text-main-4 font-semibold"
+                  >Message</label
+                >
+                <label for="" class="w-1/6 text-main-4 font-semibold">:</label>
                 <textarea
                   type="text"
                   placeholder="Message"
-                  class="w-3/4 border-2 py-1 px-2 rounded-xl"
+                  class="w-11/12 border-2 border-main-4 py-1 px-2 rounded-xl focus:outline-none"
                 ></textarea>
               </div>
 
