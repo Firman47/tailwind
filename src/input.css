@@ -27,22 +27,18 @@
   }
 
   .cstm-h1 {
-    @apply text-main-4 text-3xl font-extrabold text-center;
+    @apply text-main-4 text-xl sm:text-3xl font-extrabold text-center;
   }
 
   .cstm-h2 {
     @apply text-main-4 text-2xl font-extrabold;
   }
   .cstm-box-shadow {
-    border-radius: 16px;
-    background: #fff;
-
-    /* Main shadow */
     box-shadow: 0px 32px 64px -12px rgba(85, 105, 135, 0.13);
   }
 
   .cstm-col {
-    @apply flex flex-col items-center justify-center py-6 px-6;
+    @apply flex flex-col items-center justify-center py-6  gap-2;
   }
 
   .cstm-icon-2 {
